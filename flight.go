@@ -5,4 +5,6 @@ import (
 	"string"
 )
 
-type Flight struct
+type Flight struct {
+	
+}
