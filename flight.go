@@ -8,4 +8,5 @@ import (
 type Flight struct {
 	flightNumber string
 	origin string
+	destination string
 }
