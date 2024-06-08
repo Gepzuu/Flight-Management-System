@@ -6,5 +6,6 @@ import (
 )
 
 type Flight struct {
+	flightNumber string
 	
 }
