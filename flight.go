@@ -20,5 +20,7 @@ func main() {
 		fmt.Println("Airport Management System")
 		fmt.Println("1. Add Flight")
 		fmt.Println("2. View Flights")
+		fmt.Println("3. Exit")
+		fmt.Print("Enter your choice: ")
 	}
 }
