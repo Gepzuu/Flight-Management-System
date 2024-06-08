@@ -4,3 +4,5 @@ import (
 	"fmt"
 	"string"
 )
+
+type Flight struct
