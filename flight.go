@@ -14,3 +14,7 @@ type Flight struct {
 }
 
 var flights []Flight
+
+func main() {
+	
+}
