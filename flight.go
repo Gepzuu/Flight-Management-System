@@ -12,3 +12,5 @@ type Flight struct {
 	departure string
 	arrival string
 }
+
+var flights []Flight
