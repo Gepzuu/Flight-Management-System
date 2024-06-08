@@ -24,5 +24,7 @@ func main() {
 		fmt.Print("Enter your choice: ")
 
 		var choice int
+		fmt.Scanln(&choice)
+
 	}
 }
