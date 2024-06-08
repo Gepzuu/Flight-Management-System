@@ -18,5 +18,7 @@ var flights []Flight
 func main() {
 	for{
 		fmt.Println("Airport Management System")
+		fmt.Println("1. Add Flight")
+		fmt.Println("2. View Flights")
 	}
 }
