@@ -16,5 +16,7 @@ type Flight struct {
 var flights []Flight
 
 func main() {
-	
+	for{
+		fmt.Println("Airport Management System")
+	}
 }
