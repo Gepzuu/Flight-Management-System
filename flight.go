@@ -25,5 +25,19 @@ func main() {
 		var choice int
 		fmt.Scanln(&choice)
 
+		switch choice {
+		case 1:
+			addFlight()
+		case 2:
+			viewAllFlights()
+		case 3:
+			searchFlight()
+		case 4:
+			fmt.Println("Exiting...")
+			return
+		default:
+			fmt.Println("Invalid choice. Please try again.")
+		}
+
 	}
 }
