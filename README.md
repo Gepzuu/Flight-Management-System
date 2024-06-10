@@ -1,4 +1,4 @@
-# flightmanagement
+# Flight Management System
 
 The Airport Management System is a simple console-based application designed to manage flights at an airport. This system provides the following functionalities:
 
