@@ -41,3 +41,7 @@ func main() {
 
 	}
 }
+
+func addFlight() {
+	
+}
