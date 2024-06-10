@@ -63,3 +63,9 @@ func addFlight() {
 	flights = append(flights, flight)
 	fmt.Println("Flight added successfully!")
 }
+
+func viewAllFlights() {
+	if len(flights) == 0 {
+		fmt.Println("No flights available.")
+		return
+	}
