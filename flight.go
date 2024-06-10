@@ -82,5 +82,13 @@ func searchFlight() {
 	var flightNumber string
 	fmt.Scanln(&flightNumber)
 
-	
+	for _, flight := range flights {
+		if strings.EqualFold(flight.flightNumber, flightNumber) {
+			fmt.Printf("Flight Found: Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s\n",
+				flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival)
+			return
+		}
+	}
+
+	fmt.Println("Flight not found.")
 }
