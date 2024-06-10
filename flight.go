@@ -48,5 +48,7 @@ func addFlight() {
 	fmt.Print("Enter flight number: ")
 	fmt.Scanln(&flight.flightNumber)
 
+	fmt.Print("Enter origin: ")
+	fmt.Scanln(&flight.origin)
 	
 }
