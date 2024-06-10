@@ -43,5 +43,10 @@ func main() {
 }
 
 func addFlight() {
+	var flight Flight
+
+	fmt.Print("Enter flight number: ")
+	fmt.Scanln(&flight.flightNumber)
+
 	
 }
