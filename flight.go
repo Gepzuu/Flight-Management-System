@@ -2,26 +2,28 @@ package main
 
 import (
 	"fmt"
-	"string"
+	"strings"
 )
 
 type Flight struct {
 	flightNumber string
-	origin string
-	destination string
-	departure string
-	arrival string
+	origin       string
+	destination  string
+	departure    string
+	arrival      string
 }
 
 var flights []Flight
 
 func main() {
-	for{
+	for {
 		fmt.Println("Airport Management System")
 		fmt.Println("1. Add Flight")
-		fmt.Println("2. View Flights")
-		fmt.Println("3. Exit")
+		fmt.Println("2. View All Flights")
+		fmt.Println("3. Search Flight by Flight Number")
+		fmt.Println("4. Exit")
 		fmt.Print("Enter your choice: ")
+
 		var choice int
 		fmt.Scanln(&choice)
 
@@ -38,7 +40,6 @@ func main() {
 		default:
 			fmt.Println("Invalid choice. Please try again.")
 		}
-
 	}
 }
 
