@@ -78,5 +78,9 @@ func viewAllFlights() {
 }
 
 func searchFlight() {
+	fmt.Print("Enter flight number to search: ")
+	var flightNumber string
+	fmt.Scanln(&flightNumber)
+
 	
 }
