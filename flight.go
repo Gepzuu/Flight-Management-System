@@ -69,3 +69,10 @@ func viewAllFlights() {
 		fmt.Println("No flights available.")
 		return
 	}
+
+	fmt.Println("All Flights:")
+	for _, flight := range flights {
+		fmt.Printf("Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s\n",
+			flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival)
+	}
+}
