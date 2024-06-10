@@ -59,5 +59,7 @@ func addFlight() {
 
 	fmt.Print("Enter arrival time: ")
 	fmt.Scanln(&flight.arrival)
-	
+
+	flights = append(flights, flight)
+	fmt.Println("Flight added successfully!")
 }
