@@ -76,3 +76,7 @@ func viewAllFlights() {
 			flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival)
 	}
 }
+
+func searchFlight() {
+	
+}
