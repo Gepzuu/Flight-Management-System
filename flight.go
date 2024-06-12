@@ -66,3 +66,46 @@ func main() {
 		}
 	}
 }
+
+func addFlight() {
+	var flight Flight
+
+	fmt.Print("Enter flight number: ")
+	fmt.Scanln(&flight.flightNumber)
+	if flight.flightNumber == "" {
+		fmt.Println("Flight number cannot be empty.")
+		return
+	}
+
+	fmt.Print("Enter origin: ")
+	fmt.Scanln(&flight.origin)
+	if flight.origin == "" {
+		fmt.Println("Origin cannot be empty.")
+		return
+	}
+
+	fmt.Print("Enter destination: ")
+	fmt.Scanln(&flight.destination)
+	if flight.destination == "" {
+		fmt.Println("Destination cannot be empty.")
+		return
+	}
+
+	fmt.Print("Enter departure time: ")
+	fmt.Scanln(&flight.departure)
+	if flight.departure == "" {
+		fmt.Println("Departure time cannot be empty.")
+		return
+	}
+
+	fmt.Print("Enter arrival time: ")
+	fmt.Scanln(&flight.arrival)
+	if flight.arrival == "" {
+		fmt.Println("Arrival time cannot be empty.")
+		return
+	}
+
+	flight.status = "on-time"
+	flights = append(flights, flight)
+	fmt.Println("Flight added successfully!")
+}
