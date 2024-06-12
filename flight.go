@@ -181,3 +181,26 @@ func updateFlight() {
 
 	fmt.Println("Flight not found.")
 }
+
+func sortFlights() {
+	sort.Slice(flights, func(i, j int) bool {
+		return flights[i].departure < flights[j].departure
+	})
+
+	fmt.Println("Flights sorted by departure time:")
+	viewAllFlights()
+}
+
+func filterFlights() {
+	fmt.Print("Enter origin to filter: ")
+	var origin string
+	fmt.Scanln(&origin)
+
+	fmt.Println("Flights from", origin, ":")
+	for _, flight := range flights {
+		if strings.EqualFold(flight.origin, origin) {
+			fmt.Printf("Flight Number: %s, Destination: %s, Departure: %s, Arrival: %s, Status: %s\n",
+				flight.flightNumber, flight.destination, flight.departure, flight.arrival, flight.status)
+		}
+	}
+}
