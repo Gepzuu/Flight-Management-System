@@ -109,3 +109,16 @@ func addFlight() {
 	flights = append(flights, flight)
 	fmt.Println("Flight added successfully!")
 }
+
+func viewAllFlights() {
+	if len(flights) == 0 {
+		fmt.Println("No flights available.")
+		return
+	}
+
+	fmt.Println("All Flights:")
+	for _, flight := range flights {
+		fmt.Printf("Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s, Status: %s\n",
+			flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival, flight.status)
+	}
+}
