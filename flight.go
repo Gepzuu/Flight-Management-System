@@ -222,3 +222,22 @@ func updateFlightStatus() {
 
 	fmt.Println("Flight not found.")
 }
+
+func generateReports() {
+	fmt.Println("Generating reports...")
+	fmt.Println("Delayed Flights:")
+	for _, flight := range flights {
+		if strings.EqualFold(flight.status, "delayed") {
+			fmt.Printf("Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s, Status: %s\n",
+				flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival, flight.status)
+		}
+	}
+
+	fmt.Println("Cancelled Flights:")
+	for _, flight := range flights {
+		if strings.EqualFold(flight.status, "cancelled") {
+			fmt.Printf("Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s, Status: %s\n",
+				flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival, flight.status)
+		}
+	}
+}
