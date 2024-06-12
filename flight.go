@@ -138,3 +138,19 @@ func searchFlight() {
 
 	fmt.Println("Flight not found.")
 }
+
+func deleteFlight() {
+	fmt.Print("Enter flight number to delete: ")
+	var flightNumber string
+	fmt.Scanln(&flightNumber)
+
+	for i, flight := range flights {
+		if strings.EqualFold(flight.flightNumber, flightNumber) {
+			flights = append(flights[:i], flights[i+1:]...)
+			fmt.Println("Flight deleted successfully!")
+			return
+		}
+	}
+
+	fmt.Println("Flight not found.")
+}
