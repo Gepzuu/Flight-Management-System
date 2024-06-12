@@ -204,3 +204,21 @@ func filterFlights() {
 		}
 	}
 }
+
+func updateFlightStatus() {
+	fmt.Print("Enter flight number to update status: ")
+	var flightNumber string
+	fmt.Scanln(&flightNumber)
+
+	for i, flight := range flights {
+		if strings.EqualFold(flight.flightNumber, flightNumber) {
+			fmt.Print("Enter new status: ")
+			fmt.Scanln(&flights[i].status)
+
+			fmt.Println("Flight status updated successfully!")
+			return
+		}
+	}
+
+	fmt.Println("Flight not found.")
+}
