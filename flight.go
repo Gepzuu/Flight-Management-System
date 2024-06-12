@@ -154,3 +154,30 @@ func deleteFlight() {
 
 	fmt.Println("Flight not found.")
 }
+
+func updateFlight() {
+	fmt.Print("Enter flight number to update: ")
+	var flightNumber string
+	fmt.Scanln(&flightNumber)
+
+	for i, flight := range flights {
+		if strings.EqualFold(flight.flightNumber, flightNumber) {
+			fmt.Print("Enter new origin: ")
+			fmt.Scanln(&flights[i].origin)
+
+			fmt.Print("Enter new destination: ")
+			fmt.Scanln(&flights[i].destination)
+
+			fmt.Print("Enter new departure time: ")
+			fmt.Scanln(&flights[i].departure)
+
+			fmt.Print("Enter new arrival time: ")
+			fmt.Scanln(&flights[i].arrival)
+
+			fmt.Println("Flight updated successfully!")
+			return
+		}
+	}
+
+	fmt.Println("Flight not found.")
+}
