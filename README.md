@@ -1,5 +1,5 @@
 # Flight Management System
-The Airport Management System is a simple console-based application designed to manage flights at an airport. This system provides the following functionalities:
+This system provides the following functionalities:
 
 # Add Flight
 Allows users to add new flights with details such as flight number, origin, destination, departure time, and arrival time. The initial status of the flight is set to "on-time".
