@@ -122,3 +122,19 @@ func viewAllFlights() {
 			flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival, flight.status)
 	}
 }
+
+func searchFlight() {
+	fmt.Print("Enter flight number to search: ")
+	var flightNumber string
+	fmt.Scanln(&flightNumber)
+
+	for _, flight := range flights {
+		if strings.EqualFold(flight.flightNumber, flightNumber) {
+			fmt.Printf("Flight Found: Flight Number: %s, Origin: %s, Destination: %s, Departure: %s, Arrival: %s, Status: %s\n",
+				flight.flightNumber, flight.origin, flight.destination, flight.departure, flight.arrival, flight.status)
+			return
+		}
+	}
+
+	fmt.Println("Flight not found.")
+}
