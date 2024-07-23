@@ -1,6 +1,6 @@
 # Description:
 
-This project is a Flight Management System implemented in GoLang. It provides various functionalities to manage flights efficiently.
+This project is a Flight Management System implemented in Go. It provides various functionalities to manage flights efficiently.
 
 ## Functionalities:
 
