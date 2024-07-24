@@ -56,9 +56,9 @@ docker build -t fms .
 ```
 Run the Docker container using the following command:
 ```
-docker run -p 8080:8080 fms
+docker run fms
 ```
-Access the application by navigating to http://localhost:8080 in your web browser.
+
 This way, you can run the application without needing to install GoLang directly on your system.
 
 ## Contributing:
